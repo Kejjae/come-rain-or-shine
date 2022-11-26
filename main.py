@@ -18,3 +18,4 @@ def format_response(weather):
     except:
         final_str = 'There was a problem retrieving that information'
     return final_str
+#https://www.windy.com/13.791/100.585?capAlerts,13.182,100.585,8 แปะๆไว้ก่อน
