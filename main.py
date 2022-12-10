@@ -1,6 +1,10 @@
-import tkinter as tk
-import requests #pip install requests
-from PIL import ImageTk, Image #pip install pillow
+from tkinter import*
+import requests
+from PIL import ImageTk,Image
+from tkinter import messagebox
+from time import strftime
+import math
+from datetime import datetime
 
 root = tk.Tk()
 
