@@ -12,6 +12,8 @@ window.iconbitmap('ok.ico')
 window.title("Weather")
 window.resizable(0,0)
 
+#Key: b86245b23ea848abe010da2d64c71464
+#https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key} #อาจจะแก้ทีหลัง
 
 def format_response(weather):
     try:
@@ -23,4 +25,7 @@ def format_response(weather):
     except:
         final_str = 'There was a problem retrieving that information'
     return final_str
-#https://www.windy.com/13.791/100.585?capAlerts,13.182,100.585,8 แปะๆไว้ก่อน
+
+def get_weather(city):
+    #weather_key = 'b86245b23ea848abe010da2d64c71464' อาจเปลี่ยนถ้าขอ api key ทัน
+    #url = 'https://api.openweathermap.org/data/2.5/weather'
