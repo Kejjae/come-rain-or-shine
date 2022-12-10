@@ -6,7 +6,12 @@ from time import strftime
 import math
 from datetime import datetime
 
-root = tk.Tk()
+window = Tk()
+window.geometry('800x400')
+window.iconbitmap('icon.ico')
+window.title("Weather")
+window.resizable(0,0)
+
 
 root.title("Weather App") #Title
 root.geometry("600x500") #Window size
