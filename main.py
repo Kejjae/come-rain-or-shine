@@ -13,10 +13,6 @@ window.title("Weather")
 window.resizable(0,0)
 
 
-root.title("Weather App") #Title
-root.geometry("600x500") #Window size
-
-
 def format_response(weather):
     try:
         city = weather['name']
