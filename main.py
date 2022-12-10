@@ -8,7 +8,7 @@ from datetime import datetime
 
 window = Tk()
 window.geometry('800x400')
-window.iconbitmap('icon.ico')
+window.iconbitmap('ok.ico')
 window.title("Weather")
 window.resizable(0,0)
 
