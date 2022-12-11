@@ -58,3 +58,11 @@ try:
     today = datetime.today()
 
     date = today.strftime("%d")
+    
+    def label(timer):
+
+        Frame(width = 500, height = 50, bg = "#353535").place(x = 0, y = 0)
+
+        upperborder = Label(window, text = str(timer), bg = "#353535", fg = "white")  # upper border
+        upperborder.config(font = ("Goudy Old Style", 20))
+        upperborder.place(x = 22, y = 7)
