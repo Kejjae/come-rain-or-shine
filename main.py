@@ -75,3 +75,11 @@ try:
         try:
             check = "{}".format(result['main']['temp'])
             celsius = "{}".format(result['main']['temp'])
+       
+        except:
+               messagebox.showinfo("", "    City name not found    ")
+
+          cel = (int(float(check)))-273
+          descp = ("{}".format(result['weather'][0]['description']))
+          weather = ("{}".format(result['weather'][0]['main']))
+ 
