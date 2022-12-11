@@ -1,3 +1,4 @@
+"""come-rain-or-shine"""
 from tkinter import*
 import requests
 from PIL import ImageTk,Image
@@ -11,9 +12,6 @@ window.geometry('800x400')
 window.iconbitmap('ok.ico')
 window.title("Weather")
 window.resizable(0,0)
-
-#Key: b86245b23ea848abe010da2d64c71464
-#https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key} #อาจจะแก้ทีหลัง
 
 def format_response(weather):
     try:
