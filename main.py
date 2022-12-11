@@ -66,3 +66,12 @@ try:
         upperborder = Label(window, text = str(timer), bg = "#353535", fg = "white")  # upper border
         upperborder.config(font = ("Goudy Old Style", 20))
         upperborder.place(x = 22, y = 7)
+        
+        #def weather_cast():
+        city = timer
+        query = 'q='+city
+        w_data = weather_data(query)
+        result = w_data
+        try:
+            check = "{}".format(result['main']['temp'])
+            celsius = "{}".format(result['main']['temp'])
