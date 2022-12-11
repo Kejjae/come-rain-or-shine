@@ -8,14 +8,12 @@ import math
 from datetime import datetime
 
 window = Tk()
-window.geometry('800x400')
+window.geometry('700x400')
 window.iconbitmap('ok.ico')
-window.title("Weather")
+window.title("come-rain-or-shine")
 window.resizable(0,0)
 
 try:
-
-    # Mechenism
 
     def weather_data(query):
         """ weather data """
