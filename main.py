@@ -98,3 +98,11 @@ try:
             Label(window, image = img, border = 0).place(x = 110, y = 130)
             bcolor = "#7492b3"
             fcolor = "white"
+
+        elif cel <= 10 and weather == "Clouds":
+            Frame(window, width = 800, height = 350, bg = "#7492b3").place(x = 0, y = 50)
+            img = ImageTk.PhotoImage(Image.open("ccold3.png"))
+            Label(window, image = img, border = 0).place(x = 110, y = 130)
+            bcolor = "#7492b3"
+            fcolor = "white"
+            
