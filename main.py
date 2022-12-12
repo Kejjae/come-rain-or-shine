@@ -160,4 +160,10 @@ try:
         temp.place(x=290,y=150)
                
     label(timer = "Bangkok")
+    
+    def cmd1():
+        up_timer = str(city1.get())
+        label(str(up_timer))
+
+    Button(window, image=img1, command=cmd1, border=0).place(x=648, y=10)
             
