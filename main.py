@@ -166,4 +166,15 @@ try:
         label(str(up_timer))
 
     Button(window, image=img1, command=cmd1, border=0).place(x=648, y=10)
-            
+    
+
+except:
+
+    Frame(window, width=800, height=400, bg='#ffffff').place(x=0, y=0)
+    global imgx
+    imgx = ImageTk.PhotoImage(Image.open("oninternet2.png"))
+
+    Label(window, image=imgx, border=0).pack(expand=True)  # place(x=100,y=100)
+
+
+window.mainloop()
