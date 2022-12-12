@@ -60,6 +60,7 @@ try:
     date = today.strftime("%d")
     
     def label(timer):
+        """ make our label"""
 
         Frame(width = 500, height = 50, bg = "#353535").place(x = 0, y = 0)
 
