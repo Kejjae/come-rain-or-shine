@@ -106,3 +106,10 @@ try:
             bcolor = "#7492b3"
             fcolor = "white"
             
+        elif cel >= 10 and weather == "Rain":
+            Frame(window, width = 800, height = 350, bg = "#60789e").place(x = 0, y = 50)
+            img = ImageTk.PhotoImage(Image.open("rainny.png"))
+            Label(window, image = img, border = 0).place(x = 110, y = 130)
+            bcolor = "#60789e"
+            fcolor = "white"
+            
