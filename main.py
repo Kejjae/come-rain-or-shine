@@ -138,4 +138,26 @@ try:
         tmax = ("MAX temp: {}".format(result['main']['temp_max']))
         tmin = ("MIN temp: {}".format(result['main']['temp_min']))
         up1 = up_timer = ("Wind speed: {} m/s".format(result['wind']['speed']))
+        
+        date_month_board = Label(window, text=str(month+"  "+ date),bg=bcolor,fg=fcolor)
+        date_month_board.config(font=("Microsoft JhengHei UI Light", 25))
+        date_month_board.place(x=295,y=335)          
+
+        data = Label(window, text=str(str(humidity+"%")),bg=bcolor,fg=fcolor)# upper border
+        data.config(font=("Microsoft JhengHei UI Light", 15))
+        data.place(x=460,y=135)      
+
+        data = Label(window, text=str(str(pressure+" hPa")),bg=bcolor,fg=fcolor)# upper border
+        data.config(font=("Microsoft JhengHei UI Light", 15))
+        data.place(x=460,y=175)
+
+        data = Label(window, text=str(str(up1)),bg=bcolor,fg=fcolor)# upper border
+        data.config(font=("Microsoft JhengHei UI Light", 15))
+        data.place(x=460,y=215)
+
+        temp = Label(window, text=str(str(cel) +"°C"),bg=bcolor,fg=fcolor)# upper border
+        temp.config(font=("Microsoft JhengHei UI Light", 40))
+        temp.place(x=290,y=150)
+               
+    label(timer = "Bangkok")
             
