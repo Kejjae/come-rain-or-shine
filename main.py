@@ -82,4 +82,13 @@ try:
           cel = (int(float(check)))-273
           descp = ("{}".format(result['weather'][0]['description']))
           weather = ("{}".format(result['weather'][0]['main']))
+        
+        global img
+
+        if cel > 10 and weather == "Haze" or weather == "Clear":
+            Frame(window, width = 800, height = 350, bg = "#f78954").place(x = 0, y = 50)
+            img = ImageTk.PhotoImage(Image.open("sunny2.png"))
+            Label(window, image = img, border = 0).place(x = 110, y = 130)
+            bcolor = "#f78954"
+            fcolor = "white"
  
