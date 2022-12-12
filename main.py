@@ -114,3 +114,10 @@ try:
             bcolor = "#60789e"
             fcolor = "white"
             
+            
+        humidity = ("Humidity: {}".format(result['main']['humidity']))
+        pressure = ("Pressure: {}".format(result['main']['pressure']))
+        tmax = ("MAX temp: {}".format(result['main']['temp_max']))
+        tmin = ("MIN temp: {}".format(result['main']['temp_min']))
+        up1 = up_timer = ("Wind speed: {} m/s".format(result['wind']['speed']))
+            
