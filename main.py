@@ -113,6 +113,13 @@ try:
             Label(window, image = img, border = 0).place(x = 110, y = 130)
             bcolor = "#60789e"
             fcolor = "white"
+        
+        elif cel <= 10 and weather == "Fog" or weather == "Clear":
+            Frame(window, width = 800, height = 350, bg = "white").place(x = 0, y = 50)
+            img = ImageTk.PhotoImage(Image.open("temp.png"))
+            Label(window, image = img, border = 0).place(x = 110, y = 130)
+            bcolor = "white"
+            fcolor = "black"
             
             
         humidity = ("Humidity: {}".format(result['main']['humidity']))
