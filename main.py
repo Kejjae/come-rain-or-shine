@@ -4,7 +4,6 @@ import requests
 from PIL import ImageTk,Image
 from tkinter import messagebox
 from time import strftime
-import math
 from datetime import datetime
 
 window = Tk()
@@ -28,7 +27,7 @@ try:
     def on_enter(e):
         """on enter"""
         city1.delete(0, 'end')
-    
+
     def on_leave(e):
         """on leave"""
         if city1.get() == '':
@@ -49,9 +48,9 @@ try:
     month = cel[0:3]
     today = datetime.today()
     date = today.strftime("%d")
-    
+
     def label(timer):
-        """ make our label"""
+        """make our label"""
         Frame(width = 500, height = 50, bg = "#353535").place(x = 0, y = 0)
         upperborder = Label(window, text = str(timer), bg = "#353535", fg = "white")
         upperborder.config(font = ("Goudy Old Style", 20)
@@ -64,7 +63,7 @@ try:
 
         try:
             check = "{}".format(result['main']['temp'])
-       
+
         except:
             messagebox.showinfo("", "    City name not found    ")
 
