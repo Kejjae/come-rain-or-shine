@@ -32,7 +32,7 @@ try:
     def on_leave(e):
         """on leave"""
         if city1.get() == '':
-            city1.insert(0, 'Search City')
+           city1.insert(0, 'Search City')
 
     city1 = Entry(window, width=21, fg='white', bg="#353535", border=0)
     city1.config(font=('Goudy Old Style', 16))
