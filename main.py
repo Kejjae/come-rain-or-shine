@@ -148,6 +148,7 @@ try:
     label(timer = "Bangkok")
 
     def cmd1():
+        """cmd"""
         up_timer = str(city1.get())
         label(str(up_timer))
 
