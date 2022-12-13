@@ -42,11 +42,10 @@ try:
     city1.insert(0, 'Search City')
     city1.place(x=540, y=12)
 
-    # date
+    #date
     timer = datetime.today().strftime('%B')
     up_timer = (timer.upper())
     ddate = datetime.now().month
-
     now = datetime.now()
     cel = now.strftime('%B')
     month = cel[0:3]
@@ -64,6 +63,7 @@ try:
         query = 'q='+city
         w_data = weather_data(query)
         result = w_data
+
         try:
             check = "{}".format(result['main']['temp'])
        
