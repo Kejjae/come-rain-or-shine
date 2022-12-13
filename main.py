@@ -123,7 +123,7 @@ try:
 
         humidity = ("Humidity: {}".format(result['main']['humidity']))
         pressure = ("Pressure: {}".format(result['main']['pressure']))
-        up1 = up_timer = ("Wind speed: {} m/s".format(result['wind']['speed']))
+        up1 = ("Wind speed: {} m/s".format(result['wind']['speed']))
 
         date_month_board = Label(window, text=str(month+"  "+ date),bg=bcolor,fg=fcolor)
         date_month_board.config(font=("Microsoft JhengHei UI Light", 25))
