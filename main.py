@@ -111,7 +111,6 @@ try:
 
         else:
             Frame(window, width = 800, height = 350, bg = "white").place(x = 0, y = 50)
-           # img = ImageTk.PhotoImage(Image.open("error.png"))
             label = Label(window, text = weather, border = 0, bg = 'white')
             label.configure(font = (("Microsoft JhengHei UI Light", 18)))
             label.place(x = 160, y = 130)
