@@ -41,7 +41,6 @@ try:
     city1.insert(0, 'Search City')
     city1.place(x=540, y=12)
 
-    #date
     timer = datetime.today().strftime('%B')
     up_timer = (timer.upper())
     ddate = datetime.now().month
