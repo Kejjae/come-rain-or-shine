@@ -16,8 +16,7 @@ window.resizable(0,0)
 try:
     def weather_data(query):
         """ weather data """
-        res = requests.get('http://api.openweathermap.org/data/2.5/weather?' + #อาจแก้อีก
-                           query+'&appid=06c921750b9a82d8f5d1294e1586276f')
+        res = requests.get('http://api.openweathermap.org/data/2.5/weather?' + query+'&appid=06c921750b9a82d8f5d1294e1586276f')
         return res.json()
 
     # Body UI
