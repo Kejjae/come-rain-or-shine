@@ -138,7 +138,7 @@ try:
         data.config(font=("Microsoft JhengHei UI Light", 15))
         data.place(x=460,y=215)
 
-        temp = Label(window, text=str(str(cel) +"°C"),bg=bcolor,fg=fcolor)# upper border
+        temp = Label(window, text=str(str(cel) +"°C"),bg=bcolor,fg=fcolor)
         temp.config(font=("Microsoft JhengHei UI Light", 40))
         temp.place(x=290,y=150)
 
@@ -152,7 +152,6 @@ try:
     Button(window, image=img1, command=cmd1, border=0).place(x=648, y=10)
 
 except:
-
     Frame(window, width=800, height=400, bg='#ffffff').place(x=0, y=0)
     global imgx
     imgx = ImageTk.PhotoImage(Image.open("oninternet2.png"))
