@@ -152,7 +152,7 @@ try:
 except:
     Frame(window, width=800, height=400, bg='#ffffff').place(x=0, y=0)
     global imgx
-    imgx = ImageTk.PhotoImage(Image.open("oninternet2.png"))
+    imgx = ImageTk.PhotoImage(Image.open("nointernet2.png"))
 
     Label(window, image=imgx, border=0).pack(expand=True)
 
