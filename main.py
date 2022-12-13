@@ -67,7 +67,7 @@ try:
             check = "{}".format(result['main']['temp'])
        
         except:
-               messagebox.showinfo("", "    City name not found    ")
+            messagebox.showinfo("", "    City name not found    ")
 
         cel = (int(float(check)))-273
         weather = ("{}".format(result['weather'][0]['main']))
