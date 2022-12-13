@@ -53,7 +53,7 @@ try:
     def label(timer):
         """ make our label"""
         Frame(width = 500, height = 50, bg = "#353535").place(x = 0, y = 0)
-        upperborder = Label(window, text = str(timer), bg = "#353535", fg = "white")  # upper border
+        upperborder = Label(window, text = str(timer), bg = "#353535", fg = "white")
         upperborder.config(font = ("Goudy Old Style", 20)
         upperborder.place(x = 22, y = 7)
 
@@ -130,11 +130,11 @@ try:
         data = Label(window, text=str(str(humidity+"%")),bg=bcolor,fg=fcolor)
         data.config(font=("Microsoft JhengHei UI Light", 15))
         data.place(x=460,y=135)      
-        data = Label(window, text=str(str(pressure+" hPa")),bg=bcolor,fg=fcolor)# upper border
+        data = Label(window, text=str(str(pressure+" hPa")),bg=bcolor,fg=fcolor)
         data.config(font=("Microsoft JhengHei UI Light", 15))
         data.place(x=460,y=175)
 
-        data = Label(window, text=str(str(up1)),bg=bcolor,fg=fcolor)# upper border
+        data = Label(window, text=str(str(up1)),bg=bcolor,fg=fcolor)
         data.config(font=("Microsoft JhengHei UI Light", 15))
         data.place(x=460,y=215)
 
