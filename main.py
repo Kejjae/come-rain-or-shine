@@ -135,8 +135,6 @@ try:
             
         humidity = ("Humidity: {}".format(result['main']['humidity']))
         pressure = ("Pressure: {}".format(result['main']['pressure']))
-        tmax = ("MAX temp: {}".format(result['main']['temp_max']))
-        tmin = ("MIN temp: {}".format(result['main']['temp_min']))
         up1 = up_timer = ("Wind speed: {} m/s".format(result['wind']['speed']))
         
         date_month_board = Label(window, text=str(month+"  "+ date),bg=bcolor,fg=fcolor)
